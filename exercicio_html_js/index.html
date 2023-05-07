@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modulo 7 - Exercício HTML - JS</title>
+
+    <link type="text/css" rel="stylesheet" href="./main.css">
+
+</head>
+    <body>
+        
+        <section id="contact">
+            
+            <div class="container">
+                <fieldset class="header">
+                    <h2><i>Contato</i></h2>
+                    
+                    <div class="formulario">
+                        <form class="form" id="form">
+
+                            <div class="campo">
+                                <label for="nome"><b>Nome</b></label>
+                                <input type="text" class="text" id="nome" name="nome" placeholder="Nome Completo" required/>
+                                <i><img class="img-erro"  src="./imagens/close.png" alt="close" width="20"></i>
+                                <i><img class="img-sucesso" src="./imagens/correct.png" alt="correct" width="20" ></i>
+                                <small><strong>Escrever o nome completo</strong> </small>
+                            </div>
+                        
+                            <div class="campo">
+                                <label for="email"><b>E-mail</b></label>
+                                <input type="email" placeholder="seu@email.com" name="email" class="email" id="email" required/>
+                                <i><img class="img-erro" src="./imagens/close.png" alt="close" width="20"></i>
+                                <i><img class="img-sucesso" src="./imagens/correct.png" alt="correct" width="20" ></i>
+                                <small><strong>Escrever email corretamente</strong> </small>
+                            </div>
+                            
+                            <div class="campo">
+                                <label for="tel"><b>Telefone</b></label>
+                                <input type="tel" placeholder="(xx)xxxxxxxxx" pattern="[0-9]{11}" name="tel" class="tel" id="tel" required/>
+                                <i><img class="img-erro" src="./imagens/close.png" alt="close" width="20"></i>
+                                <i><img class="img-sucesso" src="./imagens/correct.png" alt="correct" width="20" ></i>
+                                <small><strong>Escrever o telefone correto</strong> </small>
+                            </div>
+                        
+                            <div class="campo">
+                                <p>
+                                    <b>A- Escolha um número:</b>
+                                <select aria-label="label for the select" id="numero_1" name="numero_1" class="numero_1">
+                                    <option value="">-- Selecione --</option>
+                                    <option value="01">01</option>
+                                    <option value="02">02</option>
+                                    <option value="03">03</option>
+                                    <option value="04">04</option>
+                                    <option value="05">05</option>
+                                </select>
+                                </p>
+                                <br>
+                                <p>
+                                    <b>B- Escolha um número:</b>
+                                <select aria-label="label for the select" id="numero_2" name="numero_2" class="numero_2">
+                                    <option value="">-- Selecione --</option>
+                                    <option value="01">01</option>
+                                    <option value="02">02</option>
+                                    <option value="03">03</option>
+                                    <option value="04">04</option>
+                                    <option value="05">05</option>
+                                </select>
+                                </p>
+                            </div>
+                            
+                            <br>
+                            <div class="campo">
+                                <textarea rosw="10" cols="40" maxlength="500" placeholder="Sua mensagem" id="mensagem" name="mensagem" class="mensagem"></textarea>
+                                <br>
+                                <button  class="cadastro" id="cadastro" type="submit">Enviar</button>
+                            </div>
+                        
+                        </form>
+                    </div>
+                </fieldset>
+            </div>
+        </section>
+            <script type="text/javascript" src="./novo.js"></script>
+    </body>
+</html>
